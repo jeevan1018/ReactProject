@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    align-items: center;
+    background: #009270;
+
+    
+  }
+  
+  .nav img {
+    margin: 10px;
+  }
+  
+  .nav a {
+padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+  }
+  
+  .nav a:hover {
+    background-color: #333; 
+    
+    
+  }
+  

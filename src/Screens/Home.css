@@ -1,0 +1,14 @@
+/* body {
+    background-image: url("https://wallpaperaccess.com/full/3468697.jpg");
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    
+  } */
+  .aside{
+    margin: 10px;
+    height: 600px;
+    width: 300px;
+    background-color:bisque;
+    box-shadow: 2px 2px 2px solid black;
+    text-align: center;
+  }

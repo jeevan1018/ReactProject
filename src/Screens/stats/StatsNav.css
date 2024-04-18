@@ -1,0 +1,27 @@
+.navBarStats {
+    background: #464646;
+    height: calc(100vh - 70px);
+    width: 220px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; /* hides scrollbar */
+    -webkit-overflow-scrolling: touch; /* enables momentum scrolling on iOS */
+  }
+  
+  .navList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navLink {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  .navLink:hover {
+    background-color: #333; /* Change background color on hover */
+  }
+  
