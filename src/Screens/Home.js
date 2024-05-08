@@ -1,81 +1,70 @@
-
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import "./Home.css";
-import list from "../DataFiles/Matches_list";
-import { Link } from "react-router-dom";
+import { MatchesListData } from "../DataFiles/Matches_list";
+import { Update_list } from "../DataFiles/Updates_list";
+
 import Footer from "../navbar/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-const MatchResult= list.map((val)=>{
-  return val.typeMatches})
+  /* const [data, setData] = useState(null); 
+
+  useEffect(() => {
+    axios
+      .get("https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent", {
+        headers: {
+          "X-RapidAPI-Key": "f18702b8b8mshfe59bfd0f20b993p1cc1eajsnb6b6c2d6e22b",
+        
+        }
+      })
+      .then((response) => {
+      
+        setData(response.data);
+        
+        console.log(response.data,"api data");
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, [data]);  */
+
   // .map((val2)=>{
-//    return val2.seriesMatches.map((val3)=>{
-//      return val3.matches
-//     })
-//   })
-// })
-console.log(MatchResult)
+  //    return val2.seriesMatches.map((val3)=>{
+  //      return val3.matches
+  //     })
+  //   })
+  // })
+
+  console.log(Update_list);
+
   return (
     <div>
       <Navbar />
-      
-      {/* <MatchTypeNav /> */}
-    {/*   {list.typeMatches.map((val, ind) => (
-        <div key={ind}>
-          <h3><Link to={`/${val.matchType}`}>{val.matchType}</Link></h3>
-          {val.seriesMatches.map((match, index) => (
-            <div key={index}>
-            
-              {match.seriesAdWrapper && (
-                <p>{match.seriesAdWrapper.seriesName}</p>
-              )}
+      <div style={{ display: "flex" }}>
+        <div className="aside">
+          <h3>Latest Updates</h3>
+          {Update_list && Update_list?.storyList?.map((val,ind)=>(
+            <div key={ind}>
+              {val?.story?.hline}
             </div>
-          ))} 
+          ))}
+          {/* <h6>Who will make into Play-Offs in IPL?</h6> */}
         </div>
-      ))} 
-    
- */}
- <div style={{display:"flex"}}>
-
- <div className="aside">
-        <h3>Latest Updates</h3>
-        {/* <h6>Who will make into Play-Offs in IPL?</h6> */}
       </div>
-
-
-<div>
-{list.map((val,ind)=>(
-  
-  <div key={ind}>
-    {val.typeMatches.map((item,index)=>(
-  /*     <Link to={`/${item.matchType}`} ><h3 key={item.matchType}>{item.matchType}</h3></Link> */
-
-<div>
-
-  {item.seriesMatches.map((valueArry,ind)=>(
-    <div >
-      {/* {valueArry.} */}
+      <div>
+        {MatchesListData &&
+          MatchesListData?.typeMatches?.map((match, index) => (
+            <>
+              <Link to={match.matchType}>{match.matchType} </Link>
+              {match?.seriesMatches.map((series, index) => (
+                <div>{series?.seriesAdWrapper?.seriesName}</div>
+              ))}
+             
+            </>
+          ))}
       </div>
-  ))}
-  </div>
-
-
-    ))}
-
-
-
-  </div>
-  
-))}
-</div>
-
-     
-      </div>
-
-
-      <Footer/>
+      <Footer />
     </div>
   );
 };

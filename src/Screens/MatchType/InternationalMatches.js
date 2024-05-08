@@ -35,18 +35,16 @@
 
 import React from "react";
 import Navbar from "../../navbar/Navbar";
-import list from "../../DataFiles/Matches_list";
+import {MatchesListData} from "../../DataFiles/Matches_list";
 import Footer from "../../navbar/Footer";
 
 const InternationalMatches = () => {
-  const international = list.map((val, ind) => {
-    return val.typeMatches.filter((item) => {
-      return item.matchType === "International";
-    });
-  });
+  // const international = list.map((val, ind) => {
+  //   return val.typeMatches.filter((item) => {
+  //     return item.matchType === "International";
+  //   });
+  // });
   
-  
-  console.log(international);
   
   return (
     <div>
@@ -68,15 +66,6 @@ const InternationalMatches = () => {
             ))} 
           </div>
         ))} */}
-
-
-
-{console.log(international[0])}
-
-
-
-
-
       <Footer />
     </div>
   );

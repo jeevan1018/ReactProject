@@ -1,0 +1,15 @@
+.ranknav {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.ranknav a{
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+    background-color: #009270;
+    padding: 12px;
+    border-radius: 50%;
+}
+  

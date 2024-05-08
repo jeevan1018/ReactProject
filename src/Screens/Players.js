@@ -2,12 +2,18 @@ import React from 'react'
 import Navbar from '../navbar/Navbar'
 import { Link } from 'react-router-dom'
 import Footer from '../navbar/Footer'
+import NavTeam from "./players/NavTeam"
 
 const Players = () => {
   return (
     <div>
         <Navbar/>
-        <h1>Im players list</h1>
+        <div>
+          <div>
+            <NavTeam/>
+          </div>
+          
+        </div>
         
     <Footer/>  
     </div>

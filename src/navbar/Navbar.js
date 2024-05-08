@@ -10,10 +10,12 @@ const Navbar = () => {
       <Link to={"/"}>Home</Link>
       <Link to={"/matches"}>Matches</Link>
       <Link to={"/series"}>Series</Link>
+      <Link to={"/testRank"}>Stats</Link>
       <Link to={"/schedules"}>Schedules</Link>
+      <Link to={"/india"}>Players</Link>
       <Link to={"/venues"}>Venues</Link>
-      <Link to={"/players"}>Players</Link>
-      <Link to={"/stats"}>Stats</Link>
+      
+      
     </div>
   );
 };

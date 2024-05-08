@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { auth } from "./firebase";
+import {createUserWithEmailAndPassword} from "firebase/auth"
+
+import { useNavigate } from "react-router-dom";
 
 
 function Register() {
@@ -10,29 +14,24 @@ function Register() {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
+    const NavigateToLogin=useNavigate()
+
     const handleRegister = async (e) => {
         e.preventDefault();
 
 
-        if (password !== confirmPassword) {
-            alert("Passwords do not match");
-            return;
-        }
+    
 
         try {
 
-           /*  const userCredential = await firebase.auth().createUserWithEmailAndPassword(email, password); */
+             
 
 
-      /*       await firebase.firestore().collection("users").doc(userCredential.user.uid).set({
-                name,
-                email,
-                phoneNumber,
-                dob,
-                gender,
-            }); */
+        
 
             alert("User registered successfully!");
+            NavigateToLogin("/")
+
         } catch (error) {
             console.error("Error registering user:", error);
             alert("Registration failed. Please try again.");

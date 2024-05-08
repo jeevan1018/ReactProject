@@ -9,7 +9,7 @@ const Serise = () => {
     <div>
         <Navbar/>
       <h1>Serise Component</h1>
-      {list.map((value,index)=>value.typeMatches.map((val, ind) => (
+      {/* {list.map((value,index)=>value.typeMatches.map((val, ind) => (
         <div key={ind}>
           <h3><Link to={`/${val.matchType}`}>{val.matchType}</Link></h3>
           {val.seriesMatches.map((match, index) => (
@@ -21,7 +21,7 @@ const Serise = () => {
           ))} 
         </div>
       ))
-    )}
+    )} */}
     
 
 
