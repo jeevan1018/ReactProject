@@ -1,0 +1,59 @@
+
+div.background {
+    font-family: Arial, sans-serif;
+    background-color: #55e0bf;
+
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 750px;
+    width: 100%;
+}
+
+
+.mainDiv {
+    background-color: #222;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.mainDiv h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.mainDiv form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDiv input,
+.mainDiv select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 20px); 
+}
+
+.mainDiv select {
+    width: 100%;
+}
+
+.mainDiv button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(250, 37, 37);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 338px;
+}
+
+.mainDiv button:hover {
+    background-color:#9c9a9a3e;
+}

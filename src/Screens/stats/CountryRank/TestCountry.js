@@ -37,16 +37,16 @@ const TestCountry = () => {
           <th>Country Name</th>
           <th>Rating</th>
           </tr>
-          <tr><CountryRank RankNumber={"1"} countryImg={ind} name={"India"} rating={"121"} /></tr>
-          <tr><CountryRank RankNumber={"2"} countryImg={aus} name={"Australia"} rating={"118"} /></tr>
-          <tr><CountryRank RankNumber={"3"} countryImg={sa} name={"South Africa"} rating={"110"} /></tr>
-          <tr><CountryRank RankNumber={"4"} countryImg={pak} name={"Pakistan"} rating={"109"} /></tr>
-          <tr><CountryRank RankNumber={"5"} countryImg={nz} name={"New Zealand"} rating={"102"} /></tr>
-          <tr><CountryRank RankNumber={"6"} countryImg={eng} name={"England"} rating={"96"} /></tr>
-          <tr><CountryRank RankNumber={"7"} countryImg={sl} name={"Sri Lanka"} rating={"90"} /></tr>
-          <tr><CountryRank RankNumber={"8"} countryImg={ban} name={"Bangladesh"} rating={"88"} /></tr>
-          <tr><CountryRank RankNumber={"9"} countryImg={wi} name={"West Indies"} rating={"81"} /></tr>
-          <tr><CountryRank RankNumber={"10"} countryImg={af} name={"Afghanistan"} rating={"71"} /></tr>
+          <tr><CountryRank RankNumber={"1"} countryImg={aus} name={"Australia"} rating={"124"} /></tr>
+          <tr><CountryRank RankNumber={"2"} countryImg={ind} name={"India"} rating={"120"} /></tr>
+          <tr><CountryRank RankNumber={"3"} countryImg={eng} name={"England"} rating={"105"} /></tr>
+          <tr><CountryRank RankNumber={"4"} countryImg={sa} name={"South Africa"} rating={"103"} /></tr>
+          <tr><CountryRank RankNumber={"5"} countryImg={nz} name={"New Zealand"} rating={"96"} /></tr>
+          <tr><CountryRank RankNumber={"6"} countryImg={pak} name={"Pakistan"} rating={"89"} /></tr>
+          <tr><CountryRank RankNumber={"7"} countryImg={sl} name={"Sri Lanka"} rating={"83"} /></tr>
+          <tr><CountryRank RankNumber={"8"} countryImg={wi} name={"West Indies"} rating={"82"} /></tr>
+          <tr><CountryRank RankNumber={"9"} countryImg={ban} name={"Bangladesh"} rating={"53"} /></tr>
+          <tr><CountryRank RankNumber={"10"} countryImg={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flag_of_Zimbabwe.svg/125px-Flag_of_Zimbabwe.svg.png"} name={"Zimbabwe"} rating={"23"} /></tr>
           
         </table>
 </div>

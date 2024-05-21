@@ -1,0 +1,23 @@
+.matchUl{
+    display: flex;
+    
+}
+.matchLi{
+    padding: 5px;
+    margin-right:  20px;
+    
+list-style-type: none;
+
+}
+.matchNav{
+    background-color: #333;
+    
+}
+.anchor{
+    color: white;
+    text-decoration: none !important;
+
+}
+li.matchLi:hover{
+    background-color: #222;
+}

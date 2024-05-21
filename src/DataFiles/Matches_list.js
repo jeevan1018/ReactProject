@@ -1,6 +1,7 @@
 export const MatchesListData = {
   typeMatches: [
     {
+      matchTypeId:"1",
       matchType: "International",
       seriesMatches: [
         {
@@ -23,13 +24,13 @@ export const MatchesListData = {
                     teamId: 5,
                     teamName: "Sri Lanka",
                     teamSName: "SL",
-                    imageId: 172119,
+                    imageId: "https://th.bing.com/th/id/OIP.kaZO35U2QOdAjeQ-Tp3t2AHaE7?w=271&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 6,
                     teamName: "Bangladesh",
                     teamSName: "BAN",
-                    imageId: 172120,
+                    imageId: "https://th.bing.com/th?id=OSK.HERORcwRJlewY4RsW_HWoU_W2oE0kuqxUWlesXt9HecfTNc&w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM",
                   },
                   venueInfo: {
                     id: 93,
@@ -54,6 +55,8 @@ export const MatchesListData = {
                       overs: 158.6,
                     },
                     inngs2: {
+                      slash:"/",
+                      flag:"-",
                       inningsId: 3,
                       runs: 157,
                       wickets: 7,
@@ -69,6 +72,8 @@ export const MatchesListData = {
                       overs: 68.4,
                     },
                     inngs2: {
+                      slash:"/",
+                      flag:"-",
                       inningsId: 4,
                       runs: 318,
                       wickets: 10,
@@ -107,13 +112,13 @@ export const MatchesListData = {
                     teamId: 161,
                     teamName: "Namibia",
                     teamSName: "NAM",
-                    imageId: 172229,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 304,
                     teamName: "Oman",
-                    teamSName: "OMAN",
-                    imageId: 172353,
+                    teamSName:"OMN",
+                    imageId: "https://www.bing.com/th?id=OIP.iuKjlBKZzbjH2vPj33BGbwHaEK&w=193&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   venueInfo: {
                     id: 549,
@@ -163,13 +168,13 @@ export const MatchesListData = {
                     teamId: 161,
                     teamName: "Namibia",
                     teamSName: "NAM",
-                    imageId: 172229,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 304,
                     teamName: "Oman",
-                    teamSName: "OMAN",
-                    imageId: 172353,
+                    teamSName:"OMN",
+                    imageId: "https://www.bing.com/th?id=OIP.iuKjlBKZzbjH2vPj33BGbwHaEK&w=193&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   venueInfo: {
                     id: 549,
@@ -218,14 +223,14 @@ export const MatchesListData = {
                   team1: {
                     teamId: 304,
                     teamName: "Oman",
-                    teamSName: "OMAN",
-                    imageId: 172353,
+                    teamSName:"OMN",
+                    imageId: "https://www.bing.com/th?id=OIP.iuKjlBKZzbjH2vPj33BGbwHaEK&w=193&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   team2: {
                     teamId: 161,
                     teamName: "Namibia",
                     teamSName: "NAM",
-                    imageId: 172229,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 549,
@@ -274,14 +279,14 @@ export const MatchesListData = {
                   team1: {
                     teamId: 304,
                     teamName: "Oman",
-                    teamSName: "OMAN",
-                    imageId: 172353,
+                    teamSName:"OMN",
+                    imageId: "https://www.bing.com/th?id=OIP.iuKjlBKZzbjH2vPj33BGbwHaEK&w=193&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   team2: {
                     teamId: 161,
                     teamName: "Namibia",
                     teamSName: "NAM",
-                    imageId: 172229,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 549,
@@ -339,13 +344,13 @@ export const MatchesListData = {
                     teamId: 570,
                     teamName: "Lesotho",
                     teamSName: "LSO",
-                    imageId: 172622,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 1284,
                     teamName: "Eswatini",
                     teamSName: "SWT",
-                    imageId: 248525,
+                    imageId: "https://flagpedia.net/data/flags/w1600/sz.png",
                   },
                   venueInfo: {
                     id: 1877,
@@ -395,13 +400,13 @@ export const MatchesListData = {
                     teamId: 1284,
                     teamName: "Eswatini",
                     teamSName: "SWT",
-                    imageId: 248525,
+                    imageId: "https://flagpedia.net/data/flags/w1600/sz.png",
                   },
                   team2: {
                     teamId: 570,
                     teamName: "Lesotho",
                     teamSName: "LSO",
-                    imageId: 172622,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 1877,
@@ -446,18 +451,18 @@ export const MatchesListData = {
                   startDate: "1711783800000",
                   endDate: "1711796400000",
                   state: "Complete",
-                  status: "Lesotho won by 8 wkts - 12-over game",
+                  status: "Lesotho won by 8 wkts ",
                   team1: {
                     teamId: 1284,
                     teamName: "Eswatini",
                     teamSName: "SWT",
-                    imageId: 248525,
+                    imageId: "https://flagpedia.net/data/flags/w1600/sz.png",
                   },
                   team2: {
                     teamId: 570,
                     teamName: "Lesotho",
                     teamSName: "LSO",
-                    imageId: 172622,
+                    imageId: "https://th.bing.com/th/id/OIP.U1pAaQ4PPTE-Lq2LlhIBYwAAAA?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 1877,
@@ -498,6 +503,7 @@ export const MatchesListData = {
       ],
     },
     {
+      matchTypeId:"2",
       matchType: "League",
       seriesMatches: [
         {
@@ -520,13 +526,13 @@ export const MatchesListData = {
                     teamId: 58,
                     teamName: "Chennai Super Kings",
                     teamSName: "CSK",
-                    imageId: 225641,
+                    imageId: "https://th.bing.com/th/id/OIP.GjOkK2Ir41-iulqp6xPR0QHaEJ?w=276&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 255,
                     teamName: "Sunrisers Hyderabad",
                     teamSName: "SRH",
-                    imageId: 225649,
+                    imageId: "https://th.bing.com/th/id/OIP.Jlp8tU2fnCol3KYWz_nUugHaEC?w=335&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 80,
@@ -577,13 +583,13 @@ export const MatchesListData = {
                     teamId: 971,
                     teamName: "Gujarat Titans",
                     teamSName: "GT",
-                    imageId: 235085,
+                    imageId: "https://th.bing.com/th/id/OIP.LE21Cr8Hkavh5US0-2i9IgHaFJ?w=237&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 65,
                     teamName: "Punjab Kings",
                     teamSName: "PBKS",
-                    imageId: 225648,
+                    imageId: "https://th.bing.com/th/id/OIP.WPLi5MZ9nBua3hhWx53V8gHaEJ?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 50,
@@ -634,13 +640,13 @@ export const MatchesListData = {
                     teamId: 63,
                     teamName: "Kolkata Knight Riders",
                     teamSName: "KKR",
-                    imageId: 225646,
+                    imageId: "https://www.bing.com/th?id=OIP.2ePWIQQyhUhfbsPDAHMHegHaEK&w=172&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   team2: {
                     teamId: 61,
                     teamName: "Delhi Capitals",
                     teamSName: "DC",
-                    imageId: 225644,
+                    imageId: "https://www.bing.com/th?id=OIP.aTOkfqzFVDxDHGH5YEL1SAAAAA&w=152&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   venueInfo: {
                     id: 154,
@@ -692,13 +698,13 @@ export const MatchesListData = {
                     teamId: 966,
                     teamName: "Lucknow Super Giants",
                     teamSName: "LSG",
-                    imageId: 389444,
+                    imageId: "https://th.bing.com/th/id/OIP.Kq-BiyFqgywmG1F3ySWOMQHaEN?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 59,
                     teamName: "Royal Challengers Bengaluru",
                     teamSName: "RCB",
-                    imageId: 225643,
+                    imageId: "https://th.bing.com/th/id/OIP.v6IHDGe0pB5Zt6zkmurYuQHaEK?w=328&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 27,
@@ -749,13 +755,13 @@ export const MatchesListData = {
                     teamId: 62,
                     teamName: "Mumbai Indians",
                     teamSName: "MI",
-                    imageId: 225645,
+                    imageId: "https://th.bing.com/th/id/OIP.I4J2tbscJwV5UC5OwNxzmgHaEZ?w=309&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 64,
                     teamName: "Rajasthan Royals",
                     teamSName: "RR",
-                    imageId: 225647,
+                    imageId: "https://th.bing.com/th/id/OIP.-wqGhlvha0v_1PAkC7d6IAHaFj?w=244&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 81,
@@ -806,13 +812,13 @@ export const MatchesListData = {
                     teamId: 61,
                     teamName: "Delhi Capitals",
                     teamSName: "DC",
-                    imageId: 225644,
+                    imageId: "https://www.bing.com/th?id=OIP.aTOkfqzFVDxDHGH5YEL1SAAAAA&w=152&h=104&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
                   },
                   team2: {
                     teamId: 58,
                     teamName: "Chennai Super Kings",
                     teamSName: "CSK",
-                    imageId: 225641,
+                    imageId: "https://th.bing.com/th/id/OIP.GjOkK2Ir41-iulqp6xPR0QHaEJ?w=276&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 154,
@@ -864,13 +870,13 @@ export const MatchesListData = {
                     teamId: 255,
                     teamName: "Sunrisers Hyderabad",
                     teamSName: "SRH",
-                    imageId: 225649,
+                    imageId: "https://th.bing.com/th/id/OIP.Jlp8tU2fnCol3KYWz_nUugHaEC?w=335&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 971,
                     teamName: "Gujarat Titans",
                     teamSName: "GT",
-                    imageId: 235085,
+                    imageId: "https://th.bing.com/th/id/OIP.LE21Cr8Hkavh5US0-2i9IgHaFJ?w=237&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 50,
@@ -921,13 +927,13 @@ export const MatchesListData = {
                     teamId: 966,
                     teamName: "Lucknow Super Giants",
                     teamSName: "LSG",
-                    imageId: 389444,
+                    imageId: "https://th.bing.com/th/id/OIP.Kq-BiyFqgywmG1F3ySWOMQHaEN?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 65,
                     teamName: "Punjab Kings",
                     teamSName: "PBKS",
-                    imageId: 225648,
+                    imageId: "https://th.bing.com/th/id/OIP.WPLi5MZ9nBua3hhWx53V8gHaEJ?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 485,
@@ -1462,6 +1468,7 @@ export const MatchesListData = {
       ],
     },
     {
+      matchTypeId:"3",
       matchType: "Women",
       seriesMatches: [
         {
@@ -1484,13 +1491,13 @@ export const MatchesListData = {
                     teamId: 99,
                     teamName: "England Women",
                     teamSName: "ENGW",
-                    imageId: 172191,
+                    imageId: "https://th.bing.com/th/id/OIP.jA2mIMieqM7DTYi4LKLT7gHaEc?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 98,
                     teamName: "New Zealand Women",
                     teamSName: "NZW",
-                    imageId: 172190,
+                    imageId: "https://th.bing.com/th/id/OIP.-2kdKy1nPETRjGAYSga55wHaE8?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 100,
@@ -1540,13 +1547,13 @@ export const MatchesListData = {
                     teamId: 98,
                     teamName: "New Zealand Women",
                     teamSName: "NZW",
-                    imageId: 172190,
+                    imageId: "https://th.bing.com/th/id/OIP.-2kdKy1nPETRjGAYSga55wHaE8?rs=1&pid=ImgDetMain",
                   },
                   team2: {
                     teamId: 99,
                     teamName: "England Women",
                     teamSName: "ENGW",
-                    imageId: 172191,
+                    imageId: "https://th.bing.com/th/id/OIP.jA2mIMieqM7DTYi4LKLT7gHaEc?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   venueInfo: {
                     id: 45,
@@ -1604,13 +1611,13 @@ export const MatchesListData = {
                     teamId: 388,
                     teamName: "Zimbabwe Women",
                     teamSName: "ZIMW",
-                    imageId: 172441,
+                    imageId: "https://flagsweb.com/images/PNG/Flag_of_Zimbabwe.png",
                   },
                   team2: {
                     teamId: 390,
                     teamName: "Papua New Guinea Women",
                     teamSName: "PNGW",
-                    imageId: 172443,
+                    imageId: "https://th.bing.com/th/id/OIP.MbQBcMZQGAkhj3n2KV4HZgHaEK?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 69,
@@ -1661,13 +1668,13 @@ export const MatchesListData = {
                     teamId: 388,
                     teamName: "Zimbabwe Women",
                     teamSName: "ZIMW",
-                    imageId: 172441,
+                    imageId: "https://flagsweb.com/images/PNG/Flag_of_Zimbabwe.png",
                   },
                   team2: {
                     teamId: 390,
                     teamName: "Papua New Guinea Women",
                     teamSName: "PNGW",
-                    imageId: 172443,
+                    imageId: "https://th.bing.com/th/id/OIP.MbQBcMZQGAkhj3n2KV4HZgHaEK?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 69,
@@ -1716,13 +1723,13 @@ export const MatchesListData = {
                     teamId: 390,
                     teamName: "Papua New Guinea Women",
                     teamSName: "PNGW",
-                    imageId: 172443,
+                    imageId: "https://th.bing.com/th/id/OIP.MbQBcMZQGAkhj3n2KV4HZgHaEK?rs=1&pid=ImgDetMain",
                   },
                   team2: {
                     teamId: 388,
                     teamName: "Zimbabwe Women",
                     teamSName: "ZIMW",
-                    imageId: 172441,
+                    imageId: "https://flagsweb.com/images/PNG/Flag_of_Zimbabwe.png",
                   },
                   venueInfo: {
                     id: 69,
@@ -1780,13 +1787,13 @@ export const MatchesListData = {
                     teamId: 100,
                     teamName: "Australia Women",
                     teamSName: "AUSW",
-                    imageId: 172192,
+                    imageId: "https://th.bing.com/th/id/OIP.bj0R8HauyzivL52fFNhaxQHaDt?w=322&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7",
                   },
                   team2: {
                     teamId: 329,
                     teamName: "Bangladesh Women",
                     teamSName: "BANW",
-                    imageId: 172377,
+                    imageId: "https://th.bing.com/th/id/OIP.hsvmtpJAHNP3nTbxQkOYCAHaEe?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 128,
@@ -1836,13 +1843,13 @@ export const MatchesListData = {
                     teamId: 100,
                     teamName: "Australia Women",
                     teamSName: "AUSW",
-                    imageId: 172192,
+                    imageId: "https://th.bing.com/th/id/OIP.bj0R8HauyzivL52fFNhaxQHaDt?rs=1&pid=ImgDetMain",
                   },
                   team2: {
                     teamId: 329,
                     teamName: "Bangladesh Women",
                     teamSName: "BANW",
-                    imageId: 172377,
+                    imageId: "https://th.bing.com/th/id/OIP.hsvmtpJAHNP3nTbxQkOYCAHaEe?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 128,
@@ -1892,13 +1899,13 @@ export const MatchesListData = {
                     teamId: 329,
                     teamName: "Bangladesh Women",
                     teamSName: "BANW",
-                    imageId: 172377,
+                    imageId: "https://th.bing.com/th/id/OIP.hsvmtpJAHNP3nTbxQkOYCAHaEe?rs=1&pid=ImgDetMain",
                   },
                   team2: {
                     teamId: 100,
                     teamName: "Australia Women",
                     teamSName: "AUSW",
-                    imageId: 172192,
+                    imageId: "https://th.bing.com/th/id/OIP.bj0R8HauyzivL52fFNhaxQHaDt?rs=1&pid=ImgDetMain",
                   },
                   venueInfo: {
                     id: 128,
@@ -1955,13 +1962,13 @@ export const MatchesListData = {
                     teamId: 260,
                     teamName: "South Africa Women",
                     teamSName: "RSAW",
-                    imageId: 172313,
+                    imageId: "https://flagpedia.net/data/flags/w1600/za.png",
                   },
                   team2: {
                     teamId: 258,
                     teamName: "Sri Lanka Women",
                     teamSName: "SLW",
-                    imageId: 172311,
+                    imageId: "https://freepngdesign.com/content/uploads/images/sri-lanka-large-flag-3884.png",
                   },
                   venueInfo: {
                     id: 99,
@@ -2011,13 +2018,13 @@ export const MatchesListData = {
                     teamId: 260,
                     teamName: "South Africa Women",
                     teamSName: "RSAW",
-                    imageId: 172313,
+                    imageId: "https://flagpedia.net/data/flags/w1600/za.png",
                   },
                   team2: {
                     teamId: 258,
                     teamName: "Sri Lanka Women",
                     teamSName: "SLW",
-                    imageId: 172311,
+                    imageId: "https://freepngdesign.com/content/uploads/images/sri-lanka-large-flag-3884.png",
                   },
                   venueInfo: {
                     id: 102,

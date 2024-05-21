@@ -38,6 +38,10 @@ import Pakistan from '../Screens/players/Pakistan'
 import SouthAfrica from '../Screens/players/SouthAfrica'
 import Srilanka from '../Screens/players/Srilanka'
 import WestIndies from '../Screens/players/WestIndies'
+import SeriesMatche from '../Screens/SeriseDynamic/SeriesMatche'
+import MatchesDetails from '../Screens/MatchDynamic/MatchesDetails'
+import Motera from '../Screens/Venues/Motera'
+
 
 
 const PostNavigation = () => {
@@ -48,17 +52,20 @@ const PostNavigation = () => {
         <Route path={"/"} element={<Home/>}/>
         <Route path={"/series"} element={<Serise/>}/>
         <Route path={"/matches"} element={<Matches/>}/>
+        <Route path={"/matches/:idNumber"} element={<MatchesDetails/>}/>
         <Route path={"/venues"} element={<Venus/>}/>
         <Route path={"/players"} element={<Players/>}>
           <Route path={"/players/india"} element={<India/>}/>
         </Route>
         <Route path={"/schedules"} element={<Schedules/>}/>
         <Route path={"/stats"} element={<Stats/>}/>
+        <Route path={'/series/:id'} element={<SeriesMatche/>}/>
 
-        <Route path={"/International"} element={<InternationalMatches/>} />
-          <Route path={"/League"} element={<LeagueMatches/>} />
+
+        <Route path={"/international"} element={<InternationalMatches/>} />
+          <Route path={"/league"} element={<LeagueMatches/>} />
           <Route path={"/domestic"} element={<DomesticMatches/>} />
-          <Route path={"/Women"} element={<WomenMatches/>} />
+          <Route path={"/women"} element={<WomenMatches/>} />
         <Route path={"/*"} element={<Default/>}/>
 
 
@@ -96,7 +103,7 @@ const PostNavigation = () => {
             <Route path={"/west-indies"} element={<WestIndies/>}/>
 
 
-
+<Route path={"/motera"} element={<Motera/>}/>
 
 
       </Routes>

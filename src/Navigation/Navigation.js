@@ -1,22 +1,40 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import PostNavigation from './PostNavigation'
 import PreNavigation from './PreNavigation'
 import { BrowserRouter } from 'react-router-dom'
+import { auth } from '../Screens/Pre-nav/firebase'
+
 
 
 export const LoginContext=createContext()
 
 const Navigation = () => {
+  const [login, setLogin] = useState(false);
+  
+  useEffect((()=>{
+    auth.onAuthStateChanged((user)=>{
+    
+      setLogin(user)
+    })
+  }),[])
 
-    const [login,setLogin]=useState(true)
-    const HandleLogin=()=>{
-        setLogin(true)
-    }
+  
+
+    
+     
+
+   
+  
+   
+     const HandleLogin = () => {
+       setLogin(!login);
+     };
+
   return (
     <>
 
-    <LoginContext.Provider value={{login,HandleLogin}}>
     <BrowserRouter>
+    <LoginContext.Provider value={{login,HandleLogin}}>
 
 
 
@@ -24,8 +42,8 @@ const Navigation = () => {
     
     
     
-    </BrowserRouter>
     </LoginContext.Provider>
+    </BrowserRouter>
 
 
     </>

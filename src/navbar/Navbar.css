@@ -19,7 +19,19 @@ padding: 10px;
   
   .nav a:hover {
     background-color: #333; 
+    text-decoration: none;
     
     
+  }
+  /* button{
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin-left: 750px;
+
+  } */
+  button:hover{
+    background-color:#333 ;
+    color: aliceblue;
   }
   

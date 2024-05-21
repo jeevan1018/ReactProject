@@ -19,49 +19,49 @@ const Afghanistan = () => {
 
 <table >
   <tr>
-  <TeamPlayers number={"1"} name={"Rohit Sharma(c)"} role={"Batsmen"}/>
+  <TeamPlayers number={"1"} name={"Rashid Khan(c)"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"2"} name={"Virat Kohli"} role={"Batsmen"}/>
+   <TeamPlayers number={"2"} name={"Rahmanullah Gurbaz"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"3"} name={"Yashaswi Jaiswal"} role={"Batsmen"}/>
+   <TeamPlayers number={"3"} name={"Ibrahim Zadran"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"4"} name={"Surya kumar Yadav"} role={"Batsmen"}/>
+   <TeamPlayers number={"4"} name={"Azmatullah Omarzai"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"5"} name={"Hardik Pandya(vc)"} role={"All-Rounder"}/>
+   <TeamPlayers number={"5"} name={"Najibullah Zadran"} role={"All-Rounder"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"6"} name={"Rishab Pant(wk)"} role={"Batsmen"}/>
+   <TeamPlayers number={"6"} name={"Mohammad Ishaq(wk)"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"7"} name={"Sanju Samson(wk)"} role={"Batsmen"}/>
+   <TeamPlayers number={"7"} name={"Gulbadin Naib"} role={"Batsmen"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"8"} name={"Shivam Dube"} role={"All-Rounder"}/>
+   <TeamPlayers number={"8"} name={"Mohammad Nabi"} role={"All-Rounder"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"9"} name={"Ravindra Jedeja"} role={"All-Rounder"}/>
+   <TeamPlayers number={"9"} name={"Karim Janat"} role={"All-Rounder"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"10"} name={"Axer Patel"} role={"All-Rounder"}/>
+   <TeamPlayers number={"10"} name={"Nangyal Kharoti"} role={"All-Rounder"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"11"} name={"Kuldeep Yadav"} role={"Spinner"}/>
+   <TeamPlayers number={"11"} name={"Mujeeb Ur Rahman,"} role={"Spinner"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"12"} name={"Yuzi Chahal"} role={"Spinner"}/>
+   <TeamPlayers number={"12"} name={"Noor Ahmad"} role={"Spinner"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"13"} name={"Jashpreet Bumrah"} role={"Bowler"}/>
+   <TeamPlayers number={"13"} name={"Naveen-ul-Haq"} role={"Bowler"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"14"} name={"Mahammad Siraj"} role={"Bowler"}/>
+   <TeamPlayers number={"14"} name={"Fazalhaq Farooqi"} role={"Bowler"}/>
   </tr>
   <tr>
-   <TeamPlayers number={"15"} name={"Avesh Khan"} role={"Bowler"}/>
+   <TeamPlayers number={"15"} name={"Fareed Ahmad Malik"} role={"Bowler"}/>
   </tr>
 </table>
 </div>

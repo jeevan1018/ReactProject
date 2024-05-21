@@ -1,7 +1,5 @@
-export const  InternationalMatches = {
-    matchType: "International",
-    seriesMatches: [
-      {
+export const seriesData = [
+    {
         seriesAdWrapper: {
           seriesId: 7534,
           seriesName: "Sri Lanka tour of Bangladesh, 2024",
@@ -52,6 +50,8 @@ export const  InternationalMatches = {
                     overs: 158.6,
                   },
                   inngs2: {
+                    slash:"/",
+                    flag:"-",
                     inningsId: 3,
                     runs: 157,
                     wickets: 7,
@@ -67,6 +67,8 @@ export const  InternationalMatches = {
                     overs: 68.4,
                   },
                   inngs2: {
+                    slash:"/",
+                    flag:"-",
                     inningsId: 4,
                     runs: 318,
                     wickets: 10,
@@ -76,13 +78,6 @@ export const  InternationalMatches = {
               },
             },
           ],
-        },
-      },
-      {
-        adDetail: {
-          name: "native_matches",
-          layout: "native_large",
-          position: 1,
         },
       },
       {
@@ -317,181 +312,4 @@ export const  InternationalMatches = {
           ],
         },
       },
-      {
-        seriesAdWrapper: {
-          seriesId: 7790,
-          seriesName: "Lesotho tour of Eswatini, 2024",
-          matches: [
-            {
-              matchInfo: {
-                matchId: 92102,
-                seriesId: 7790,
-                seriesName: "Lesotho tour of Eswatini, 2024",
-                matchDesc: "5th T20I",
-                matchFormat: "T20",
-                startDate: "1711870200000",
-                endDate: "1711882800000",
-                state: "Complete",
-                status: "Eswatini won by 3 wkts",
-                team1: {
-                  teamId: 570,
-                  teamName: "Lesotho",
-                  teamSName: "LSO",
-                  imageId: 172622,
-                },
-                team2: {
-                  teamId: 1284,
-                  teamName: "Eswatini",
-                  teamSName: "SWT",
-                  imageId: 248525,
-                },
-                venueInfo: {
-                  id: 1877,
-                  ground: "Malkerns Country Club oval",
-                  city: "Malkerns",
-                  timezone: "+02:00",
-                  latitude: "-26.52192",
-                  longitude: "31.19320",
-                },
-                currBatTeamId: 1284,
-                seriesStartDt: "1711670400000",
-                seriesEndDt: "1712016000000",
-                isTimeAnnounced: true,
-                stateTitle: "SWT Won",
-              },
-              matchScore: {
-                team1Score: {
-                  inngs1: {
-                    inningsId: 1,
-                    runs: 127,
-                    wickets: 9,
-                    overs: 20,
-                  },
-                },
-                team2Score: {
-                  inngs1: {
-                    inningsId: 2,
-                    runs: 128,
-                    wickets: 7,
-                    overs: 18.2,
-                  },
-                },
-              },
-            },
-            {
-              matchInfo: {
-                matchId: 92093,
-                seriesId: 7790,
-                seriesName: "Lesotho tour of Eswatini, 2024",
-                matchDesc: "4th T20I",
-                matchFormat: "T20",
-                startDate: "1711800000000",
-                endDate: "1711812600000",
-                state: "Complete",
-                status: "Eswatini won by 39 runs",
-                team1: {
-                  teamId: 1284,
-                  teamName: "Eswatini",
-                  teamSName: "SWT",
-                  imageId: 248525,
-                },
-                team2: {
-                  teamId: 570,
-                  teamName: "Lesotho",
-                  teamSName: "LSO",
-                  imageId: 172622,
-                },
-                venueInfo: {
-                  id: 1877,
-                  ground: "Malkerns Country Club oval",
-                  city: "Malkerns",
-                  timezone: "+02:00",
-                  latitude: "-26.52192",
-                  longitude: "31.19320",
-                },
-                currBatTeamId: 1284,
-                seriesStartDt: "1711670400000",
-                seriesEndDt: "1712016000000",
-                isTimeAnnounced: true,
-                stateTitle: "SWT Won",
-              },
-              matchScore: {
-                team1Score: {
-                  inngs1: {
-                    inningsId: 1,
-                    runs: 153,
-                    wickets: 6,
-                    overs: 20,
-                  },
-                },
-                team2Score: {
-                  inngs1: {
-                    inningsId: 2,
-                    runs: 114,
-                    wickets: 10,
-                    overs: 19.5,
-                  },
-                },
-              },
-            },
-            {
-              matchInfo: {
-                matchId: 92084,
-                seriesId: 7790,
-                seriesName: "Lesotho tour of Eswatini, 2024",
-                matchDesc: "3rd T20I",
-                matchFormat: "T20",
-                startDate: "1711783800000",
-                endDate: "1711796400000",
-                state: "Complete",
-                status: "Lesotho won by 8 wkts - 12-over game",
-                team1: {
-                  teamId: 1284,
-                  teamName: "Eswatini",
-                  teamSName: "SWT",
-                  imageId: 248525,
-                },
-                team2: {
-                  teamId: 570,
-                  teamName: "Lesotho",
-                  teamSName: "LSO",
-                  imageId: 172622,
-                },
-                venueInfo: {
-                  id: 1877,
-                  ground: "Malkerns Country Club oval",
-                  city: "Malkerns",
-                  timezone: "+02:00",
-                  latitude: "-26.52192",
-                  longitude: "31.19320",
-                },
-                currBatTeamId: 570,
-                seriesStartDt: "1711670400000",
-                seriesEndDt: "1712016000000",
-                isTimeAnnounced: true,
-                stateTitle: "LSO Won",
-              },
-              matchScore: {
-                team1Score: {
-                  inngs1: {
-                    inningsId: 1,
-                    runs: 86,
-                    wickets: 8,
-                    overs: 12,
-                  },
-                },
-                team2Score: {
-                  inngs1: {
-                    inningsId: 2,
-                    runs: 90,
-                    wickets: 2,
-                    overs: 10.5,
-                  },
-                },
-              },
-            },
-          ],
-        },
-      },
-    ],
-  }
+]

@@ -1,16 +1,17 @@
-import React, { useState } from "react";
-import { auth } from "./firebase";
+import React, { StrictMode, useState } from "react";
+import { auth ,db} from "./firebase";
 import {createUserWithEmailAndPassword} from "firebase/auth"
+import { setDoc,doc } from "firebase/firestore";
+import  "./PreNav.css" 
 
-import { useNavigate } from "react-router-dom";
+import { Link, json, useNavigate } from "react-router-dom";
 
 
 function Register() {
     const [name, setName] = useState("");
+    const [phone,setPhone]=useState("")
+    const [gender,setGender]=useState("")
     const [email, setEmail] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
-    const [dob, setDob] = useState("");
-    const [gender, setGender] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -23,14 +24,30 @@ function Register() {
     
 
         try {
+           await createUserWithEmailAndPassword(auth,email,password);
+            const User=auth.currentUser;
+            console.log(User)
+
+            if(User){
+                await setDoc(doc(db,"User",User.uid),{
+                    email:User.email,
+                    name:name,
+                    phone:phone,
+                    gender:gender
+
+
+                });
+
+            }
 
              
 
 
-        
+        const DetailStore=localStorage.setItem("User" ,JSON.stringify(User))
+        console.log(DetailStore)
 
             alert("User registered successfully!");
-            NavigateToLogin("/")
+          NavigateToLogin("/")
 
         } catch (error) {
             console.error("Error registering user:", error);
@@ -39,45 +56,54 @@ function Register() {
     };
 
     return (
-        <div>
+        <div className="background">
+        <div className="mainDiv">
             <h2>Register</h2>
             <form onSubmit={handleRegister}>
                 <div>
                     <label>Name:</label>
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
+                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter Name" required />
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Email" required />
                 </div>
+
                 <div>
-                    <label>Phone Number:</label>
-                    <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                    <label>Phone:</label>
+                    <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter Phone Number" required />
                 </div>
+
                 <div>
-                    <label>Date of Birth:</label>
-                    <input type="date" value={dob} onChange={(e) => setDob(e.target.value)} />
+                <label>
+        Gender:
+        <select value={gender} onChange={(e)=> setGender(e.target.value)} required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
                 </div>
-                <div>
-                    <label>Gender:</label>
-                    <select value={gender} onChange={(e) => setGender(e.target.value)}>
-                        <option value="">Select</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+                
+            
+            
                 <div>
                     <label>Password:</label>
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter Password" required />
                 </div>
                 <div>
                     <label>Confirm Password:</label>
-                    <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
+                    <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Enter Confirm Password" required />
                 </div>
                 <button type="submit">Register</button>
             </form>
         </div>
+        <Link  style={{ color:"white", margin:"20px"}} to={"/"}>Already Have an Account?</Link>
+
+        </div>
+        
     );
 }
 

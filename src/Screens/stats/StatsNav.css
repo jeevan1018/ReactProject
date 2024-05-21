@@ -23,5 +23,6 @@
   
   .navLink:hover {
     background-color: #333; /* Change background color on hover */
+    text-decoration: none;
   }
   
