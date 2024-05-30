@@ -13,15 +13,18 @@ const Venus = () => {
   
   return (
     <>
+    
       <Navbar />
-      <div style={{ margin:"10px 10px 30px 10px"}}>
-      <h2  ><img src={ind} height={"50px"} width={"100px"}/>INDIAN VENUES</h2>
+      <div>
+    
+      <h2 className="heading" ><img src={ind} height={"50px"} width={"100px"}/>INDIAN VENUES</h2>
      
-      <div className="container">
-    <div style={{display:"flex"}}>
+    
+    <div className="country">
+      <div className="countryChild">
   
      <Link to={"/motera"} >
-      <div className="transitionDiv">  
+      
          <VenuesProp
             stadium={"Narendra Modi Stadium"}
             location={"Ahemdabad"}
@@ -30,9 +33,9 @@ const Venus = () => {
             }
           />
        
-       </div>   
+         
           </Link>
-       <div className="transitionDiv">  
+    
          <VenuesProp
             stadium={"Wankhede Cricket Stadium"}
             location={"Mumbai"}
@@ -40,10 +43,10 @@ const Venus = () => {
               "https://www.icccricketschedule.com/wp-content/uploads/2023/01/Wankhede-Stadium-Mumbait.jpg"
             }
           />
-          </div>
+        </div>
       
         
-       <div className="transitionDiv">  
+      <div className="countryChild">
          <VenuesProp
             stadium={"Dharmashala Cricket Stadium"}
             location={"Dharmashala"}
@@ -51,10 +54,10 @@ const Venus = () => {
               "https://www.exoticmiles.com/wp-content/uploads/2020/06/Dharamshala_Cricket_Stadium.jpg"
             }
           />
-          </div>
+          
 
 
-       <div className="transitionDiv">  
+      
          <VenuesProp
             stadium={"Eden Gardens"}
             location={"Kolkata"}
@@ -64,21 +67,15 @@ const Venus = () => {
           />
           </div>
         
-      </div>
-      </div>
+    </div>
       
-</div>
 
-
-<div >
-      <h2 ><img src={aus} height={"50px"} width={"100px"}/>Australia VENUES</h2>
+      <h2 className="heading" ><img src={aus} height={"50px"} width={"100px"}/>Australia VENUES</h2>
       
-    
-      <div className="container">
-    <div style={{display:"flex"}}>
+    <div className="country">
+      <div className="countryChild">
+
   
-     
-      <div className="transitionDiv">  
          <VenuesProp
          link={"https://en.wikipedia.org/wiki/Melbourne_Cricket_Ground"}
             stadium={"Melbourne Cricket Ground "}
@@ -87,8 +84,7 @@ const Venus = () => {
               "https://mysportstourist.com/wp-content/uploads/2020/01/MCG.jpg"
             }
           />
-          </div>
-       <div className="transitionDiv">  
+        
          <VenuesProp
             stadium={"Sydney Cricket Ground"}
             location={"Sydney"}
@@ -96,10 +92,10 @@ const Venus = () => {
               "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/4e/61/de/view-of-the-sydney-cricket.jpg?w=1200&h=1200&s=1"
             }
           />
-          </div>
         
+        </div>
       
-       <div className="transitionDiv">  
+      <div className="countryChild">
          <VenuesProp
          
             stadium={"Adelaide Oval Cricket Ground"}
@@ -108,8 +104,8 @@ const Venus = () => {
               "https://www.internationalcrickettours.co.uk/wp-content/uploads/2019/06/631286-adelaide-oval-afp.jpg"
             }
           />
-          </div>
-       <div className="transitionDiv">  
+        
+    
          <VenuesProp
             stadium={"Perth Stadium"}
             location={"Perth"}
@@ -117,22 +113,21 @@ const Venus = () => {
               "https://th.bing.com/th/id/OIP.AIa1JgD54Tz-PYazj4_55wHaEK?rs=1&pid=ImgDetMain"
             }
           />
-          </div>
-          </div>
-          </div>
-          </div>
-    
         
+    </div>
+        
+</div>
+        
+      <h2 className="heading" ><img src={eng} height={"50px"} width={"100px"}/>England VENUES</h2>
+      
+      
+      
+    
+  <div className="country">
 
-          <div>
-      <h2 ><img src={eng} height={"50px"} width={"100px"}/>England VENUES</h2>
-      
-      
-      <div className="container">
-    <div style={{display:"flex"}}>
   
-     
-      <div className="transitionDiv">  
+     <div className="countryChild">
+      
          <VenuesProp
             stadium={"Lords Cricket Ground"}
             location={"London"}
@@ -140,8 +135,8 @@ const Venus = () => {
               "https://d2gjl3w70qc898.cloudfront.net/content/uploads/2017/07/05122344/1022.6666666666666x767__origin__0x0_Lords_Cricket_Ground.jpg"
             }
           />
-          </div>
-       <div className="transitionDiv">  
+          
+      
          <VenuesProp
             stadium={"Trent Bridge Cricket Ground"}
             location={"West Bridgford"}
@@ -149,10 +144,10 @@ const Venus = () => {
               "https://www.visit-nottinghamshire.co.uk/imageresizer/?image=%2Fdmsimgs%2FTrent_Bridge_Cricket_Ground_2_DMS_499506718.jpg&action=ProductDetailProFullWidth"
             }
           />
-          </div>
+        
+      </div>
       
-      
-       <div className="transitionDiv">  
+      <div className="countryChild">
          <VenuesProp
             stadium={"The Oval Cricket Ground"}
             location={"Kennington"}
@@ -160,8 +155,8 @@ const Venus = () => {
               "https://s3-eu-west-2.amazonaws.com/seatunique-ghost/2019/08/the-kia-oval-cricket-ground-london.jpg"
             }
           />
-          </div>
-       <div className="transitionDiv">  
+          
+       
          <VenuesProp
             stadium={"Old Trafford Cricket Ground"}
             location={"Manchester"}
@@ -169,16 +164,17 @@ const Venus = () => {
               "https://i.pinimg.com/originals/31/83/ce/3183ce91efffc6814835ceb6fcdc49cc.jpg"
             }
           />
-          </div>
+          
         
       </div>
       </div>
-      </div>
-      
 
 
 
-      <Footer />
+     
+    </div>
+  
+    <Footer />
     </>
   );
 };

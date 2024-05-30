@@ -43,7 +43,7 @@ function Register() {
              
 
 
-        const DetailStore=localStorage.setItem("User" ,JSON.stringify(User))
+        const DetailStore=localStorage.setItem("UserData" ,JSON.stringify(User))
         console.log(DetailStore)
 
             alert("User registered successfully!");

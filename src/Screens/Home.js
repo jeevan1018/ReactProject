@@ -100,12 +100,10 @@ const Home = () => {
          </div>
          <div className="article">
           <div>
-           
-            
-          {remove ?  (<div>
-            <button  style={{border:"none" , height:"20px", width:"20px"}} onClick={HandleDelete}><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVstt89ghfkH86_QUXzBz9YvgB1iQxhqTJxg&s"} height={"20px"} width={"20px"}/></button>
-            <img className="advertisement" src={add} height={"200px"} width={"340px"}/><br/>
-            </div>):(<div></div>)}
+           {remove ?  (<div className="advertisement">
+           <button style={{border:"none"}} onClick={HandleDelete}><b>x</b></button> 
+           <a target="_blank" href="https://www.zomato.com/hyderabad/mr-delicious-kukatpally/menu"> <img className="addimage"  src={add} height={"200px"} width={"340px"}/></a><br/>
+            </div>):(<div className="google"><p>Add By <b style={{fontSize:"25px"}}>Google</b> </p> <p> <a style={{padding:"5px", margin:"5px", backgroundColor:"royalblue", textDecoration:"none" ,color:"white"}} target="_blank" href="https://www.google.com/tools/feedback/reports/home">Sent Feedback</a></p>  <p> <a style={{padding:"5px", margin:"5px", backgroundColor:"silver", textDecoration:"none"}} target="_blank" href="https://adssettings.google.com/whythisad">Why this add?</a></p></div>)}
             </div>
           
             

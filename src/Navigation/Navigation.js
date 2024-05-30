@@ -9,7 +9,7 @@ import { auth } from '../Screens/Pre-nav/firebase'
 export const LoginContext=createContext()
 
 const Navigation = () => {
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
   
   useEffect((()=>{
     auth.onAuthStateChanged((user)=>{

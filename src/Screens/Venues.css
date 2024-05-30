@@ -1,11 +1,28 @@
 .container{
+
+    justify-content: space-evenly;
     
-    overflow-x: auto; 
+    
+    
+   /*  overflow-x: auto; 
     white-space: nowrap; 
     box-shadow: 5px 5px 5px gray;
     padding: 10px; 
     margin: 20px;
     overflow-y:hidden;
-    scrollbar-color: transparent transparent;
+    scrollbar-color: transparent transparent; */
     
+}
+
+.heading{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.country{
+    display: flex;
+}
+.countryChild{
+    margin: 10px 0px 10px 65px;
 }
