@@ -31,3 +31,21 @@ tr:hover {
 img{
     margin: 5px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .table {
+        overflow-x: auto; /* Add horizontal scroll */
+        max-width: 100%;
+        height: calc(100vh - 70px);
+    }
+
+    th, td {
+        padding: 4px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Adjust font size for better readability */
+    }
+
+    img {
+        margin: 3px; /* Adjust image margin for smaller screens */
+    }
+}

@@ -47,7 +47,7 @@ function Register() {
         console.log(DetailStore)
 
             alert("User registered successfully!");
-          NavigateToLogin("/")
+          NavigateToLogin("/login")
 
         } catch (error) {
             console.error("Error registering user:", error);
@@ -100,7 +100,7 @@ function Register() {
                 <button type="submit">Register</button>
             </form>
         </div>
-        <Link  style={{ color:"white", margin:"20px"}} to={"/"}>Already Have an Account?</Link>
+        <Link  style={{ color:"white", margin:"20px"}} to={"/login"}>Already Have an Account?</Link>
 
         </div>
         

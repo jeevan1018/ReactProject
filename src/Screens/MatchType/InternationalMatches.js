@@ -59,7 +59,7 @@ const InternationalMatches = () => {
                 <div className="cart">
                   <h4 className="heading">{serise?.seriesAdWrapper?.seriesName}</h4>
                   {serise?.seriesAdWrapper?.matches?.map((match) => (
-                    <div className="matches" style={{ margin: "10px" }}>
+                    <div className="matches" >
                       <p
                         style={{
                           fontSize: "14px",

@@ -1,7 +1,60 @@
-.SchedulesDiv{
-    
-    background-color:#ddd;
-    margin: 20px;
-    box-shadow: 5px 5px 5px gray;
-    
-}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* Schedule Container */
+  .SchedulesDiv {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  /* Series Heading */
+  .heading {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #333;
+    margin-top: 5px;
+    padding:10px 8px 8px 8px;
+    border-radius: 8px 8px;
+  }
+  
+  /* Schedule Details */
+  .scheduleDetails {
+    padding: 10px 0;
+  }
+  
+  /* Team Info */
+  .teamInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .teamInfo img {
+    margin-right: 10px;
+  }
+  
+  /* Venue Info */
+  .venueInfo {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .SchedulesDiv {
+      padding: 15px;
+    }
+  
+.heading {
+      font-size: 18px;
+    }
+  }
+  

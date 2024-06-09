@@ -1,4 +1,4 @@
-.footer {
+ .footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
@@ -44,5 +44,28 @@
   
   .footer-section ul li a:hover {
     text-decoration: underline;
+  }
+   
+
+  @media screen and (max-width: 450px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      flex: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .mobile-section {
+      margin-bottom: 10px;
+    }
+  
+    .mobile-section img {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
   }
   

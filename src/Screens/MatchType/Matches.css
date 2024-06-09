@@ -1,14 +1,85 @@
-.heading{
+/* .heading{
     background-color: #222;
     color: white;
     padding: 10px;
 }
-.matches{
-    
 
-
-}
 .cart{
     background-color: bisque;
     
-}
+} */
+
+
+/* General styles for the container */
+div {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar and MatchTypeNav should be styled separately if needed */
+  
+  /* Cart container */
+  .cart {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading inside the cart */
+  .heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:white;
+    background-color: #009270;
+  }
+  
+  /* Individual matches container */
+  .matches {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Text inside matches */
+  .matches p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Team images inside matches */
+  .matches img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Bold text inside matches */
+  .matches b {
+    margin-right: 5px;
+  }
+  
+  /* Match result */
+  .matches .match-result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #009270;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .cart {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .matches p {
+      font-size: 12px;
+    }
+  
+    .heading {
+      font-size: 16px;
+    }
+  }
+  

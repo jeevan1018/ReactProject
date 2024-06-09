@@ -41,13 +41,13 @@ export const UpCommingTour={
           "seriesId": 3641
         }
       },
-      {
+     /*  {
         "adDetail": {
           "name": "native_news_index_random_1",
           "layout": "native_large",
           "position": 1
         }
-      },
+      }, */
       {
         "matchDetailsMap": {
           "key": "Fri, 10 Jun 2022 - Tue, 14 Jun 2022",

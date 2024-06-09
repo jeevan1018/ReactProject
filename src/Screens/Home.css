@@ -1,4 +1,4 @@
-.aside {
+ /* .aside {
   margin: 10px;
   width: 300px !important;
   background-color: rgb(255, 178, 36);
@@ -39,31 +39,6 @@
     
   } 
 
-
-.advertisement{
-   
-  position: absolute;
-  right: 0%;
-  
-  
-  
-  
-  animation: slide-right 1s linear ;
-}
-
-@keyframes slide-right {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(0%);
-  }
-}
-  
-  
-  
-
-
 .news{
   
   box-shadow: 5px 5px 5px gray;
@@ -79,15 +54,208 @@
   overflow: hidden;
 }
 .special{
-  margin-top: 240px;
+  margin-top: 100px;
 }
 .addimage{
   border: 3px dotted black !important;
 }
 .google{
   text-align: center;
-  transform: translate(0px ,50px);
+  
+  margin-top: 100px;
 
   
   
+}
+.x{
+  height: 0px;
+  width: 0px;
+  margin-left: 0px;
+}
+.x:hover{
+  color: black;
+  background-color: transparent;
+}
+ */
+
+
+
+ html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background: #009270;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.nav img {
+  margin: 10px;
+}
+
+.nav a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.nav a:hover {
+  background-color: #333;
+  text-decoration: none;
+}
+
+.button, button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.button:hover, button:hover {
+  background-color: #333;
+  color: aliceblue;
+}
+
+.nav .active {
+  background-color: #222;
+  color: aliceblue;
+}
+
+.account {
+  display: inline;
+  align-items: end;
+  filter: brightness(215%);
+}
+
+.profile:hover {
+  background-color: transparent !important;
+}
+
+.aside {
+  margin: 10px;
+  width: 300px !important;
+  background-color: rgb(255, 178, 36);
+  box-shadow: 5px 5px 5px gray;
+}
+
+.scoreContainer {
+  height: 250px;
+  width: 1150px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  overflow-y: hidden;
+  scrollbar-color: transparent transparent;
+}
+
+.scoreBar {
+  transition: 1s linear;
+  box-shadow: 2px 2px 2px black;
+  background-color: #222222ee;
+  color: white;
+  height: 195px;
+  width: 320px;
+  margin: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.scoreBar:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.news {
+  box-shadow: 5px 5px 5px gray;
+  margin: 10px;
+}
+
+.article {
+  margin: 10px;
+  height: auto;
+  width: 350px;
+  box-shadow: 3px 3px 3px gray;
+  position: relative;
+  overflow: hidden;
+}
+
+.special {
+  margin-top: 100px;
+}
+
+.addimage {
+  border: 3px dotted black !important;
+}
+
+.google {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.x {
+  height: 0px;
+  width: 0px;
+  margin-left: 0px;
+}
+
+.x:hover {
+  color: black;
+  background-color: transparent;
+}
+
+
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 5px;
+  }
+
+  .nav a {
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+
+  .button, button {
+    width: 80px;
+    height: 35px;
+  }
+
+  .scoreContainer {
+    padding: 10px 2px;
+  }
+
+  .scoreBar {
+    width: 95%;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  .news, .article {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .addimage {
+    width: 100%;
+    height: auto;
+  }
+
+  .google {
+    margin-top: 20px;
+  }
 }

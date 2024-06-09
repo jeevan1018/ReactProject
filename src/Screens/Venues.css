@@ -1,16 +1,8 @@
-.container{
+/* .container{
 
     justify-content: space-evenly;
     
     
-    
-   /*  overflow-x: auto; 
-    white-space: nowrap; 
-    box-shadow: 5px 5px 5px gray;
-    padding: 10px; 
-    margin: 20px;
-    overflow-y:hidden;
-    scrollbar-color: transparent transparent; */
     
 }
 
@@ -18,11 +10,60 @@
     background-color: black;
     padding: 10px;
     color: white;
+    text-align: center;
 }
 
 .country{
     display: flex;
 }
 .countryChild{
-    margin: 10px 0px 10px 65px;
+    margin: 10px 10px 10px 120px;
 }
+ */
+ .container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .heading {
+    background-color:#333 !important;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .country {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .countryChild {
+    margin: 10px;
+    flex: 1 1 calc(50% - 20px); /* Two items per row, with margins */
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 1024px) {
+    .countryChild {
+      flex: 1 1 calc(50% - 20px); /* Two items per row for tablets/laptops */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .countryChild {
+      flex: 1 1 calc(100% - 20px); /* One item per row for mobile devices */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .countryChild {
+      flex: 1 1 calc(100% - 10px); /* One item per row with smaller margins for very small screens */
+      max-width: calc(100% - 10px);
+      margin: 5px;
+    }
+  }
+  

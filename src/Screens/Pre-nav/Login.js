@@ -2,17 +2,18 @@
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { createContext, useContext, useState } from "react";
-import { Link, json } from "react-router-dom";
+import { Link, json, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
-import { LoginContext } from "../../Navigation/Navigation";
+//import { LoginContext } from "../../Navigation/Navigation";
 import  "./PreNav.css"
 
 
 const Login = () => {
 
-  const LoginAuth=useContext(LoginContext)
+ // const LoginAuth=useContext(LoginContext)
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const Navigation=useNavigate()
 
   
   const handleLogin = async (e) => {
@@ -23,8 +24,10 @@ const Login = () => {
      await signInWithEmailAndPassword(auth,email,password);
       
       alert("Login successful!");
+      Navigation("/")
+
       
-      LoginAuth.HandleLogin()
+     // LoginAuth.HandleLogin()
 
     } catch (error) {
       console.error("Error logging in:", error);
@@ -33,6 +36,7 @@ const Login = () => {
   };
 
   return (
+    <>
     <div className="background">
     <div className="mainDiv">
       <h2>Login</h2>
@@ -49,8 +53,11 @@ const Login = () => {
       </form>
       
     </div>
-    <Link  style={{ color:"white", margin:"20px"}} to={"/register"}>Sign Up?</Link>
+   <div style={{ color:"white", margin:"20px"}}>Don't have an Account? <Link   to={"/register"}>Sign Up</Link></div>
+    <Link style={{color:"black" ,backgroundColor:"yellow",padding:"5px",textDecoration:"none", borderRadius:"2px"}} to={"/"} >Skip to Home</Link>
     </div>
+    
+    </>
   );
 };
 

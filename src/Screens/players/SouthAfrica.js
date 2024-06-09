@@ -14,7 +14,7 @@ const SouthAfrica = () => {
 <NavTeam/>
 </div>
 <div className="table">
-<h3><img src={sa} height={"50px"} width={"75px"} />India Squard </h3>
+<h3><img src={sa} height={"50px"} width={"75px"} />South-Africa Squard </h3>
 <p> T-20 World Cup 2024(U.S.A)</p>
 
 <table >

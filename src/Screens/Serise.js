@@ -19,7 +19,7 @@ const Serise = () => {
               {match?.seriesMatches.map((series, index) => (
               <>
               {series?.seriesAdWrapper?.seriesName=== undefined ?(<></>):(
-             <Link to={`/series/${series?.seriesAdWrapper?.seriesId}`}><h3 className="SeriesH3" style={{margin:"10px", fontSize:"16px"}}>
+             <Link className='anchor' to={`/series/${series?.seriesAdWrapper?.seriesId}`}><h3 className="SeriesH3" style={{margin:"10px", fontSize:"16px"}}>
               {series?.seriesAdWrapper?.seriesName}</h3></Link>)
 }
              </>

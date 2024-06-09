@@ -44,14 +44,15 @@ div.background {
 }
 
 .mainDiv button {
-    padding: 10px;
+    margin-left: 0px;
+    width: 338px;
     margin-top: 10px;
     background-color: rgb(250, 37, 37);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 338px;
+    
 }
 
 .mainDiv button:hover {

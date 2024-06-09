@@ -1,9 +1,7 @@
 import React from 'react';
 import './Footer.css'; 
-import icon from "./black and white icon.png";
-import android from "./android.png";
+import icon from "../Screens/aserts/footer-icon.png";
 
-import facebook from "./facebook.png";
 
 
 const Footer = () => {
@@ -11,7 +9,7 @@ const Footer = () => {
     <footer className="footer">
 
       <div className="footer-content">
-      <img style={{margin:"10px 50px 0px 0px"}} src={icon} height={"100px"} width={"100px"} alt="Cricbuzz Logo" />
+      <img style={{margin:"10px 50px 0px 0px"}} src={icon} height={"100px"} width={"150px"} alt="Cricbuzz Logo" />
         <div className="footer-section">
           <div className="mobile-section">
            

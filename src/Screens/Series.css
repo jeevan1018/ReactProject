@@ -1,7 +1,7 @@
-
+/* 
 .SeriesContainer{
     box-shadow: 5px 5px 5px gray;
-    margin: 10px;
+
     height: 250px;
     width: 100%;
     background-color:bisque;
@@ -11,7 +11,7 @@
 .SeriesH1{
     background-color: #333;
     color: #222;
-    text-align:left;
+    text-align:center;
     color: antiquewhite;
     padding: 5px;
 }
@@ -30,4 +30,63 @@ a{
 }
 a:hover{
     text-decoration: underline;
-}
+} */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  
+  .SeriesContainer {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 50px;
+    max-width: 800px;
+  }
+  
+  
+  .SeriesH1 {
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  .SeriesH3  {
+    color: black;
+    margin: 5px;
+   
+  }
+  .anchor{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .SeriesH3:hover {
+    color: #007c6e;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .SeriesContainer {
+      padding: 15px;
+    }
+  
+    .SeriesH1 {
+      font-size: 20px;
+    }
+  
+    .SeriesH3 {
+      font-size: 16px;
+    }
+  }
+  

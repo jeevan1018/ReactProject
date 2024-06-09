@@ -1,4 +1,4 @@
-.ranknav {
+/* .ranknav {
     display: flex;
     margin-top: 20px;
     
@@ -12,4 +12,36 @@
     padding: 12px;
     border-radius: 50%;
 }
-  
+   */
+
+
+   .ranknav {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+
+.ranknav a {
+    text-decoration: none;
+    margin: 10px;
+    color: aliceblue;
+    background-color: #009270;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .ranknav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items vertically */
+        margin-top: 10px; /* Adjust top margin */
+    }
+
+    .ranknav a {
+        margin: 5px; /* Reduce margin for smaller screens */
+        padding: 10px; /* Adjust padding for better fit */
+        border-radius: 50%; /* Keep border radius the same */
+        font-size: 14px; /* Adjust font size for readability */
+    }
+}

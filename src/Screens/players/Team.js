@@ -1,13 +1,13 @@
 import React from 'react'
-import "../stats/CountryRank/CountryRank.css"
+import "./Team.css"
 
 const TeamPlayers = (props) => {
   return (
     <>
 
-                <td><b> {props.number}</b></td>
-                <td><b>{props.name}</b></td>
-                <td><b>{props.role}</b></td>
+                <td style={{textAlign:"center"}}><b> {props.number}</b></td>
+                <td style={{textAlign:"center"}}><b>{props.name}</b></td>
+                <td style={{textAlign:"center"}}><b>{props.role}</b></td>
     </>
   )
 }
